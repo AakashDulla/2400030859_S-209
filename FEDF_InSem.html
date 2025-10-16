@@ -51,12 +51,12 @@
   <div>
     <h2>Products:</h2>
     <ul id="productList">
-      <!-- Products will be displayed here -->
+      
     </ul>
   </div>
 
   <script>
-    // Predefined array of products
+    
     const products = [
       { name: "Notebook", price: 5.99, category: "Stationery" },
       { name: "Laptop", price: 799.99, category: "Electronics" },
@@ -67,10 +67,10 @@
       { name: "Desk Organizer", price: 12.99, category: "Stationery" },
     ];
 
-    // Function to render products based on the selected category
+    
     function renderProducts(filteredProducts) {
       const productList = document.getElementById('productList');
-      productList.innerHTML = ''; // Clear the current list
+      productList.innerHTML = ''; 
 
       filteredProducts.forEach(product => {
         const li = document.createElement('li');
@@ -79,7 +79,7 @@
       });
     }
 
-    // Function to filter products based on the selected category
+    
     function filterProducts() {
       const selectedCategory = document.getElementById('categoryFilter').value;
 
@@ -91,12 +91,13 @@
       renderProducts(filteredProducts);
     }
 
-    // Event listener for the category filter
+    
     document.getElementById('categoryFilter').addEventListener('change', filterProducts);
 
-    // Initial render with all products
+    
     renderProducts(products);
   </script>
 
 </body>
 </html>
+
